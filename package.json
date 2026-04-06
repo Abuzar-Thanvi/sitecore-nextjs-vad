@@ -6,7 +6,9 @@
   "config": {
     "appName": "vad",
     "rootPlaceholders": [
-      "jss-main"
+      "vad-header",
+      "vad-main",
+      "vad-footer"
     ],
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "graphQLEndpointPath": "/sitecore/api/graph/edge",

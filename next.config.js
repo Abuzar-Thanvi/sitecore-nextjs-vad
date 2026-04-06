@@ -6,7 +6,7 @@ const publicUrl = jssConfig.publicUrl;
 /**
  * @type {import('next').NextConfig}
  */
-const nextConfig = {
+let nextConfig = {
   // Set assetPrefix to our public URL
   assetPrefix: publicUrl,
 
@@ -83,7 +83,13 @@ const nextConfig = {
   },
 };
 
-module.exports = () => {
-  // Run the base config through any configured plugins
-  return Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
+// 🔥 Apply plugins first (optional)
+nextConfig = Object.values(plugins).reduce((acc, plugin) => plugin(acc), nextConfig);
+
+// 🔥 Force locales again after plugins to override any JSS overrides
+nextConfig.i18n = {
+  locales: ['en', 'ar', 'he', 'ja', 'es', 'fr', 'it', 'ru', 'pl', 'de', 'zh'],
+  defaultLocale: jssConfig.defaultLanguage || 'en',
 };
+
+module.exports = nextConfig;
