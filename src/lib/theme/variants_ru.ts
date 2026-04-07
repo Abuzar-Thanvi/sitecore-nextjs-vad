@@ -3,7 +3,7 @@ import { fontFamilyRU as fontFamily, fontSize } from 'theme/font';
 import { CSSProperties } from 'react';
 
 type ResponsiveStyle = CSSProperties & {
-  [key: string]: CSSProperties | string | number;
+  [key: string]: CSSProperties | string | number | undefined;
 };
 
 type VariantItems = Record<string, ResponsiveStyle>;

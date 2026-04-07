@@ -4,7 +4,7 @@ import { desktopMedia, desktopMedia1280, desktopMedia1440, mobileMedia768, pxToR
 import { CSSProperties } from 'react';
 
 type ResponsiveStyle = CSSProperties & {
-  [key: string]: CSSProperties | string | number;
+  [key: string]: CSSProperties | string | number | undefined;
 };
 
 type VariantItems = Record<string, ResponsiveStyle>;
