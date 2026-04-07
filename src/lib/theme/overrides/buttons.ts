@@ -1,12 +1,9 @@
 import { desktopMedia, pxToRem, mobileMedia, pxToRemMob, mobileMedia768 } from '../constants';
-import spacing from '../spacing';
-import shadows from '../shadows';
-import { borders } from '../borders';
-import { mixins } from '../mixins';
-import { palette } from '../palette';
-import { getVariant } from '../utils';
-import { fontSize } from '../font';
-import { borderRadius } from '../borderRadius';
+import shadows from 'theme/shadows';
+import { mixins } from 'theme/mixins';
+import { palette } from 'theme/palette';
+import { getVariant } from 'theme/utils';
+import { borderRadius } from 'theme/borderRadius';
 
 type ButtonOverrides = Record<string, any>;
 

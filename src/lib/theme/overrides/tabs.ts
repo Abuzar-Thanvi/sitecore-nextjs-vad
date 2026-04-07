@@ -1,5 +1,5 @@
 import { desktopMedia, pxToRem } from '../constants';
-import { palette } from '../palette';
+import { palette } from 'theme/palette';
 
 type TabsOverrides = Record<string, any>;
 

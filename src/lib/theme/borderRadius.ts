@@ -1,4 +1,4 @@
-import { pxToRem } from './constants';
+import { pxToRem } from 'theme/constants';
 
 type BorderRadiusValue = number | string;
 

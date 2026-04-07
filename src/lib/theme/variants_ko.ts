@@ -1,6 +1,6 @@
 //import { common } from './palette';  #TODO
-import { fontFamilyKO as fontFamily, fontSize } from './font';
-import { desktopMedia, desktopMedia1280, desktopMedia1440, mobileMedia768, pxToRem } from './constants';
+import { fontFamilyKO as fontFamily, fontSize } from 'theme/font';
+import { desktopMedia, desktopMedia1280, desktopMedia1440, mobileMedia768, pxToRem } from 'theme/constants';
 import { CSSProperties } from 'react';
 
 type ResponsiveStyle = CSSProperties & {

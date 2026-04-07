@@ -1,5 +1,5 @@
 // typography.ts
-import { pxToRem } from './constants';
+import { pxToRem } from 'theme/constants';
 
 const baseFont = ' dirham-symbol-font, Arial, sans-serif';
 

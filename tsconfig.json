@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
       "components/*": [
         "src/components/*"
@@ -23,8 +22,11 @@
       "constants/*": [
         "src/constants/*"
       ],
+      "theme/*": [
+        "src/lib/theme/*"
+      ],
     },
-    "target": "es5",
+    "target": "esnext",
     "types": [
       "node",
       "react",

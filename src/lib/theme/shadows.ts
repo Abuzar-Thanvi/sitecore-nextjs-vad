@@ -1,4 +1,4 @@
-import { palette } from "./palette";
+import { palette } from "theme/palette";
 
 /**
  * Material Design / Custom shadow scale

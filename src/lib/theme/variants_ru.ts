@@ -1,5 +1,5 @@
 //import { common } from './palette';  #TODO
-import { fontFamilyRU as fontFamily, fontSize } from './font';
+import { fontFamilyRU as fontFamily, fontSize } from 'theme/font';
 import { CSSProperties } from 'react';
 
 type ResponsiveStyle = CSSProperties & {

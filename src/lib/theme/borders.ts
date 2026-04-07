@@ -1,5 +1,5 @@
-import { mixins } from './mixins';
-import { common } from './palette';
+import { mixins } from 'theme/mixins';
+import { common } from 'theme/palette';
 
 const colorMixins = mixins();
 

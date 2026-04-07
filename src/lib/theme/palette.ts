@@ -2,7 +2,7 @@
   This file defines color palette
 */
 
-import { mixins } from './mixins';
+import { mixins } from 'theme/mixins';
 
 //Base Colors
 const AbuDhabiRed = 'rgb(194, 0, 47)'; //#C2002F

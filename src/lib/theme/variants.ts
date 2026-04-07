@@ -1,7 +1,6 @@
 //import { common } from './palette';  #TODO
-import { fontWeight, lineHeight } from '@material-ui/system';
-import { desktopMedia, tabletLandscapeMedia, pxToRem, desktopMedia1440, desktopMedia1280, mobileMedia768 } from './constants';
-import { fontFamilyEN as fontFamily, fontSize } from './font';
+import { desktopMedia, tabletLandscapeMedia, pxToRem, desktopMedia1440, desktopMedia1280, mobileMedia768 } from 'theme/constants';
+import { fontFamilyEN as fontFamily, fontSize } from 'theme/font';
 
 export const variantItems = {
   h1: {

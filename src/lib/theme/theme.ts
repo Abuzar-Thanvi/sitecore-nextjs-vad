@@ -4,17 +4,17 @@
 */
 
 import { createTheme, ThemeOptions } from '@mui/material/styles';
-import { palette } from './palette';
-import { borders } from './borders';
-import spacing from './spacing';
-import shadows from './shadows';
-import { shadowsUpd } from './shadowsUpd';
-import { getVariant, getFontFamily } from './utils';
-import overrides from './overrides';
+import { palette } from 'theme/palette';
+import { borders } from 'theme/borders';
+import spacing from 'theme/spacing';
+import shadows from 'theme/shadows';
+import { shadowsUpd } from 'theme/shadowsUpd';
+import { getVariant, getFontFamily } from 'theme/utils';
+import overrides from 'theme/overrides';
 
-import { breakpoints, easing, arabicLang, hebrewLang } from './constants';
-import { mixins } from './mixins';
-import shape from './shape';
+import { breakpoints, easing, arabicLang, hebrewLang } from 'theme/constants';
+import { mixins } from 'theme/mixins';
+import shape from 'theme/shape';
 
 /**
  * Extend MUI Theme to support custom properties
@@ -43,13 +43,14 @@ declare module '@mui/material/styles' {
     easing?: typeof easing;
     isDirectionRTL?: boolean;
     selectedLang?: string;
+    mixins?: ReturnType<typeof mixins>;
   }
 }
 
 const theme = (selectedLang: string) => {
   const isRtl = selectedLang === arabicLang || selectedLang === hebrewLang;
   const variants = getVariant(selectedLang);
-  const fontFamily = getFontFamily(selectedLang);
+  const fontFamily = getFontFamily();
 
   const themeOptions: ThemeOptions = {
     palette: {

@@ -1,4 +1,4 @@
-import { desktopMedia, pxToRem } from './constants';
+import { desktopMedia, pxToRem } from 'theme/constants';
 import { CSSProperties } from 'react';
 
 type ResponsiveStyle = CSSProperties & {

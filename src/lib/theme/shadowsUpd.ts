@@ -1,4 +1,4 @@
-import { palette } from "./palette";
+import { palette } from "theme/palette";
 
 export const shadowsUpd = {
     /** Light shadow for raised surfaces (cards, buttons, etc.) */

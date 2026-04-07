@@ -26,7 +26,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const fields = route?.fields as RouteFields;
   const isRTL = layoutData?.sitecore?.context?.language === 'ar' || layoutData?.sitecore?.context?.language === 'he'; //NOTE - Make thsi field dynamic from BE so it can be used with any language thats required.
   return (
-    <html dir={isRTL ? 'rtl' : 'ltr'}>
+    <>
       <Scripts />
       <Head>
         <title>{fields.pageTitle.value.toString() || 'Page'}</title>
@@ -51,7 +51,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         {route && <Placeholder name="vad-main" rendering={route} />}
         {route && <Placeholder name="vad-footer" rendering={route} />}
       </div>
-    </html>
+    </>
   );
 };
 

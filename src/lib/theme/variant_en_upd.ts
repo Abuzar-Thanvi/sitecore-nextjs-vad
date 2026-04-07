@@ -1,5 +1,5 @@
-import { desktopMedia, tabletLandscapeMedia, pxToRem, desktopMedia1440, desktopMedia1280, mobileMedia768, mobileMedia, remToPx } from './constants';
-import { fontFamilyEN as fontFamily, fontSize } from './font';
+import { desktopMedia, tabletLandscapeMedia, pxToRem, desktopMedia1440, desktopMedia1280, mobileMedia768, mobileMedia, remToPx } from 'theme/constants';
+import { fontFamilyEN as fontFamily, fontSize } from 'theme/font';
 import { CSSProperties } from 'react';
 
 type ResponsiveStyle = CSSProperties & {
