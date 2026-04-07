@@ -1,4 +1,46 @@
-export const mixins = (isRtl = false) => ({
+export type CustomMixins = (isRtl?: boolean) => {
+    right: (unit: string | number) => { left?: string | number; right?: string | number };
+    left: (unit: string | number) => { left?: string | number; right?: string | number };
+    positionLR: (leftUnit: string | number, rightUnit: string | number) => { left: string | number; right: string | number };
+    borderLeft: (unit: string | number) => { borderLeft?: string | number; borderRight?: string | number };
+    borderRight: (unit: string | number) => { borderLeft?: string | number; borderRight?: string | number };
+    marginRight: (unit: string | number) => { marginLeft?: string | number; marginRight?: string | number };
+    marginLeft: (unit: string | number) => { marginLeft?: string | number; marginRight?: string | number };
+    marginLR: (left: string | number, right: string | number) => { marginLeft: string | number; marginRight: string | number };
+    paddingLeft: (unit: string | number) => { paddingLeft?: string | number; paddingRight?: string | number };
+    paddingRight: (unit: string | number) => { paddingLeft?: string | number; paddingRight?: string | number };
+    paddingLR: (left: string | number, right: string | number) => { paddingLeft: string | number; paddingRight: string | number };
+    direction: () => { direction: 'rtl' | 'ltr' };
+    textLeft: () => 'left' | 'right';
+    textRight: () => 'left' | 'right';
+    flexDirection: () => 'row-reverse' | 'row';
+    rotate180: () => string;
+    rotate0: () => string;
+    translateX: (angle: number) => number;
+    White: (opacityWeight?: number) => string;
+    AntiqueWhite: (opacityWeight?: number) => string;
+    LightOrange: (opacityWeight?: number) => string;
+    Black: (opacityWeight?: number) => string;
+    Grey: (opacityWeight?: number) => string;
+    DisabledGrey: (opacityWeight?: number) => string;
+    LightGrey: (opacityWeight?: number) => string;
+    AbuDhabiRed: (opacityWeight?: number) => string;
+    AbuDhabiOrange: (opacityWeight?: number) => string;
+    SeaGreen: (opacityWeight?: number) => string;
+    RussianViolet: (opacityWeight?: number) => string;
+    milkWhite: (opacityWeight?: number) => string;
+    neroBlack: (opacityWeight?: number) => string;
+    ADCalendar: (opacityWeight?: number) => string;
+    DarkTurquoise: (opacityWeight?: number) => string;
+    CategortTagColor: (opacityWeight?: number) => string;
+    SolidGrey: (opacityWeight?: number) => string;
+    BluishGray: (opacityWeight?: number) => string;
+    DarkBlack: (opacityWeight?: number) => string;
+    Dark23: (opacityWeight?: number) => string;
+    HalfDutchWhite: (opacityWeight?: number) => string;
+};
+
+export const mixins: CustomMixins = (isRtl = false) => ({
     right: (unit: string | number) =>
         isRtl ? { left: unit } : { right: unit },
 

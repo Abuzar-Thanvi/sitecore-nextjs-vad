@@ -62,13 +62,12 @@ export const breakpoints: {
  * @param key - The breakpoint key (e.g., 'sm', 'md', 'lg').
  * @returns The media query string if the key exists, otherwise undefined.
  */
-export function customMediaQueryUpdUp(key: BreakpointKey): string | undefined {
-    if (key) {
-        const getValue = breakpoints.values[key];
-        if (getValue) {
-            return `@media(min-width: ${getValue}px)`;
-        }
+export function customMediaQueryUpdUp(key: BreakpointKey): string {
+    const getValue = breakpoints.values[key];
+    if (getValue) {
+        return `@media(min-width: ${getValue}px)`;
     }
+    return '';
 }
 
 /**
@@ -77,13 +76,12 @@ export function customMediaQueryUpdUp(key: BreakpointKey): string | undefined {
  * @param key - The breakpoint key (e.g., 'sm', 'md', 'lg').
  * @returns The media query string if the key exists, otherwise undefined.
  */
-export function customMediaQueryUpdDown(key: BreakpointKey): string | undefined {
-    if (key) {
-        const getValue = breakpoints.values[key];
-        if (getValue) {
-            return `@media(max-width: ${getValue}px)`;
-        }
+export function customMediaQueryUpdDown(key: BreakpointKey): string {
+    const getValue = breakpoints.values[key];
+    if (getValue) {
+        return `@media(max-width: ${getValue}px)`;
     }
+    return '';
 }
 
 export const desktopMedia = `@media (min-width: ${breakpoints.values.lg}px)`;

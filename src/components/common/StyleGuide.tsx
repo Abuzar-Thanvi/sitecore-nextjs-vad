@@ -48,7 +48,8 @@ const StyleGuide = (): JSX.Element => (
           key={variant}
           variant={variant}
           btnText={variant}
-          endIcon={<DctSvgIcon/>}
+          endIcon={<DctSvgIcon />}
+          rotateIconOnRTL
         />
       ))}
     </div>
@@ -77,7 +78,8 @@ const StyleGuide = (): JSX.Element => (
           key={variant}
           variant={variant}
           btnText={variant}
-          endIcon={<DctSvgIcon/>}
+          endIcon={<DctSvgIcon />}
+          rotateIconOnRTL
         />
       ))}
     </div>
@@ -128,6 +130,37 @@ const StyleGuide = (): JSX.Element => (
           btnText={variant}
         />
       ))}
+    </div>
+    <div
+      style={{
+        display: 'flex',
+        gap: '20px',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingLeft: '20px',
+        paddingRight: '20px',
+        marginLeft: '550px',
+        marginRight: '550px',
+        height: '100px',
+        marginTop: '20px',
+      }}
+    >
+      {
+        <>
+          <ButtonUpd
+            animateSvg={false}
+            variant={'iconButton'}
+            btnText={'iconButton'}
+            startIcon={<DctSvgIcon />}
+          />
+          <ButtonUpd
+            disabled
+            animateSvg={false}
+            variant={'iconButton'}
+            endIcon={<DctSvgIcon />}
+          />
+        </>
+      }
     </div>
   </div>
 );

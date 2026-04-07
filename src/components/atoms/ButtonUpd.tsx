@@ -17,7 +17,7 @@ const StyledButton = styled(Button)(({ theme }) => {
     transition: 'all 0.2s ease-in-out',
     backgroundClip: 'padding-box',
     overflow: 'visible',
-    width: '100%',
+    width: 'fit-content',
     [customMediaQueryUpdDown('sm')]: {
       borderRadius: pxToRemMob(100),
       height: pxToRemMob(48),
