@@ -24,9 +24,9 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const { t } = useI18n();
 
   const fields = route?.fields as RouteFields;
-
+  const isRTL = layoutData?.sitecore?.context?.language === 'ar';
   return (
-    <>
+    <html dir={isRTL ? 'rtl' : 'ltr'}>
       <Scripts />
       <Head>
         <title>{fields.pageTitle.value.toString() || 'Page'}</title>
@@ -51,7 +51,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         {route && <Placeholder name="vad-main" rendering={route} />}
         {route && <Placeholder name="vad-footer" rendering={route} />}
       </div>
-    </>
+    </html>
   );
 };
 
