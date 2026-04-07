@@ -19,6 +19,7 @@ import shape from 'theme/shape';
 /**
  * Extend MUI Theme to support custom properties
  */
+// theme.ts — add inside your existing declare module block
 declare module '@mui/material/styles' {
   interface Theme {
     custom: {
@@ -44,6 +45,19 @@ declare module '@mui/material/styles' {
     isDirectionRTL?: boolean;
     selectedLang?: string;
     mixins?: ReturnType<typeof mixins>;
+  }
+
+  // ADD THESE — augment the palette
+  interface Palette {
+    border: typeof import('theme/palette').border;
+    categoryTagaction: typeof import('theme/palette').categoryTagaction;
+    categories: typeof import('theme/palette').categories;
+  }
+
+  interface PaletteOptions {
+    border?: typeof import('theme/palette').border;
+    categoryTagaction?: typeof import('theme/palette').categoryTagaction;
+    categories?: typeof import('theme/palette').categories;
   }
 }
 
