@@ -7,7 +7,10 @@ a[target='_blank']:after {
   if you run the app in connected mode while the Sitecore cookies
   are set to edit mode.
 */
-.scChromeData, .scpm { display: none !important; }
+.scChromeData,
+.scpm {
+  display: none !important;
+}
 
 /*
   Styles for default JSS error components
@@ -22,9 +25,9 @@ a[target='_blank']:after {
   Style for default content block
 */
 .contentTitle {
-    font-size: 3.5rem;
-    font-weight: 300;
-    line-height: 1.2;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 a {
@@ -33,4 +36,653 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+
+@font-face {
+  font-family: 'dirham-symbol-font';
+  src: url('./fonts/dirham-symbol-font.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AbuDhabiBasis-Regular';
+  src: url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Regular.woff2') format('woff2'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Regular.woff') format('woff'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AbuDhabiBasis-Medium';
+  src: url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Medium.woff2') format('woff2'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Medium.woff') format('woff'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AbuDhabiBasis-Light';
+  src: url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Light.woff2') format('woff2'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Light.woff') format('woff'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Light.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AbuDhabiBasis-Bold';
+  src: url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Bold.woff2') format('woff2'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Bold.woff') format('woff'),
+    url('./fonts/AbuDhabiBasis/AbuDhabiBasis-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BasicAbuDhabi-Regular';
+  src: url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Regular.woff2') format('woff2'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Regular.woff') format('woff'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BasicAbuDhabi-Medium';
+  src: url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Medium.woff2') format('woff2'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Medium.woff') format('woff'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Medium.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BasicAbuDhabi-Black';
+  src: url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Bold.woff2') format('woff2'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Bold.woff') format('woff'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BasicAbuDhabi-Light';
+  src: url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Light.woff2') format('woff2'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Light.woff') format('woff'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Light.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BasicAbuDhabi-Bold';
+  src: url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Bold.woff2') format('woff2'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Bold.woff') format('woff'),
+    url('./fonts/BasicAbuDhabi/BasicAbuDhabi-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tinos-Regular';
+  src: url('./fonts/Tinos/Tinos-Regular.woff2') format('woff2'),
+    url('./fonts/Tinos/Tinos-Regular.woff') format('woff'),
+    url('./fonts/Tinos/Tinos-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tinos-Bold';
+  src: url('./fonts/Tinos/Tinos-Bold.woff2') format('woff2'),
+    url('./fonts/Tinos/Tinos-Bold.woff') format('woff'),
+    url('./fonts/Tinos/Tinos-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoKufiArabic';
+  src: url('./fonts/NotoKufiArabic/NotoKufiArabic-Regular.woff2') format('woff2'),
+    url('./fonts/NotoKufiArabic/NotoKufiArabic-Regular.woff') format('woff'),
+    url('./fonts/NotoKufiArabic/NotoKufiArabic-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoKufiArabic-Bold';
+  src: url('./fonts/NotoKufiArabic/NotoKufiArabic-Bold.woff2') format('woff2'),
+    url('./fonts/NotoKufiArabic/NotoKufiArabic-Bold.woff') format('woff'),
+    url('./fonts/NotoKufiArabic/NotoKufiArabic-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansSc-Light';
+  src: url('./fonts/NotoSansSc/NotoSansSC-Light.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansSc-Regular';
+  src: url('./fonts/NotoSansSc/NotoSansSC-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansSc-Bold';
+  src: url('./fonts/NotoSansSc/NotoSansSC-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSansSc-Black';
+  src: url('./fonts/NotoSansSc/NotoSansSC-Black.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSerifSc-Black';
+  src: url('./fonts/NotoSerifSc/NotoSerifSC-Black.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSerifSc-SemiBold';
+  src: url('./fonts/NotoSerifSc/NotoSerifSC-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSerifSc-Bold';
+  src: url('./fonts/NotoSerifSc/NotoSerifSC-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSerifSc-Regular';
+  src: url('./fonts/NotoSerifSc/NotoSerifSC-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heebo-Light';
+  src: url('./fonts/Heebo/Heebo-Light.woff2') format('woff2'),
+    url('./fonts/Heebo/Heebo-Light.woff') format('woff'),
+    url('./fonts/Heebo/Heebo-Light.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heebo-Regular';
+  src: url('./fonts/Heebo/Heebo-Regular.woff2') format('woff2'),
+    url('./fonts/Heebo/Heebo-Regular.woff') format('woff'),
+    url('./fonts/Heebo/Heebo-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Heebo-Bold';
+  src: url('./fonts/Heebo/Heebo-Bold.woff2') format('woff2'),
+    url('./fonts/Heebo/Heebo-Bold.woff') format('woff'),
+    url('./fonts/Heebo/Heebo-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Default (above 1440px) */
+:root {
+  --mfd-container: 6rem;
+  /* 120px */
+
+  /* MFD Variables */
+  /* Spacing */
+  --mfd-spacing-xxxs: max(0.25rem, 4px);
+  /* 5px */
+  --mfd-spacing-xxs: max(0.45rem, 4px);
+  /* 9px */
+  --mfd-spacing-xs: max(0.75rem, 4px);
+  /* 15px */
+  --mfd-spacing-s: max(1rem, 4px);
+  /* 20px */
+  --mfd-spacing-m: max(1.5rem, 4px);
+  /* 30px */
+  --mfd-spacing-l: max(2rem, 4px);
+  /* 40px */
+  --mfd-spacing-xl: max(4rem, 4px);
+  /* 80px */
+  --mfd-spacing-xxl: max(5rem, 4px);
+  /* 100px */
+  --mfd-spacing-xxxl: max(7.5rem, 4px);
+  /* 150px */
+  --mfd-spacing-xxxxl: max(10rem, 4px);
+  /* 200px */
+
+  /* Radius */
+  --mfd-rounding-xs: 0.25rem;
+  /* 5px */
+  --mfd-rounding-s: 0.5rem;
+  /* 10px */
+  --mfd-rounding-m: 1rem;
+  /* 20px */
+  --mfd-rounding-l: 1rem;
+  /* 20px */
+  --mfd-rounding-xxxxl: var(--mfd-spacing-xxxxl);
+}
+
+
+/* Large Screens (Until 1440px) */
+@media (max-width: 1440px) {
+  :root {
+    /* MFD Variables */
+    /* Spacing */
+    --mfd-spacing-xxs: max(0.5rem, 4px);
+    /* 8px */
+
+    /* Radius */
+    --mfd-rounding-xs: 0.25rem;
+    /* 4px */
+    --mfd-rounding-s: 0.5rem;
+    /* 8px */
+    --mfd-rounding-m: 0.75rem;
+    /* 12px */
+    --mfd-rounding-l: 1rem;
+    /* 16px */
+
+    /* Container */
+    --mfd-container: 5rem;
+    /* 80px */
+  }
+}
+
+/* Medium Screens (Until 1280px) */
+@media (max-width: 1280px) {
+  :root {
+    /* MFD Variables */
+    /* Spacing */
+    --mfd-spacing-xxxs: max(0.285rem, 4px);
+    /* 4px */
+    --mfd-spacing-xxs: max(0.5rem, 4px);
+    /* 7px */
+    --mfd-spacing-xs: max(0.714rem, 4px);
+    /* 10px */
+
+    /* Radius */
+    --mfd-rounding-xs: 0.285rem;
+    /* 4px */
+    --mfd-rounding-s: 0.5rem;
+    /* 7px */
+    --mfd-rounding-m: 0.785rem;
+    /* 11px */
+    --mfd-rounding-l: 1rem;
+    /* 14px */
+
+    --mfd-container: 2.85rem;
+    /* 40px */
+  }
+}
+
+/* Tablet Large (Until 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    /* MFD Variables */
+    /* Spacing */
+    --mfd-spacing-xxxs: max(0.357rem, 4px);
+    /* 5px */
+    --mfd-spacing-xxs: max(0.642rem, 4px);
+    /* 9px */
+    --mfd-spacing-xs: max(1rem, 4px);
+    /* 14px */
+    --mfd-spacing-s: max(1.285rem, 4px);
+    /* 18px */
+    --mfd-spacing-m: max(2rem, 4px);
+    /* 28px */
+    --mfd-spacing-l: max(2.642rem, 4px);
+    /* 37px */
+    --mfd-spacing-xl: max(3.285rem, 4px);
+    /* 46px */
+    --mfd-spacing-xxl: max(4rem, 4px);
+    /* 56px */
+    --mfd-spacing-xxxl: max(5.285rem, 4px);
+    /* 74px */
+
+    /* Radius */
+    --mfd-rounding-xs: 0.285rem;
+    /* 4px */
+    --mfd-rounding-s: 0.5rem;
+    /* 7px */
+    --mfd-rounding-m: 0.785rem;
+    /* 11px */
+    --mfd-rounding-l: 1rem;
+    /* 14px */
+
+    /* Container */
+    --mfd-container: 2.28rem;
+    /* 32px */
+  }
+}
+
+/* Tablet Medium (Until 768px) */
+@media (max-width: 768px) {
+  :root {
+    /* MFD Variables */
+    /* Radius */
+    --mfd-rounding-xs: 0.285rem;
+    /* 4px */
+    --mfd-rounding-s: 0.5rem;
+    /* 7px */
+    --mfd-rounding-m: 0.785rem;
+    /* 11px */
+    --mfd-rounding-l: 1rem;
+    /* 14px */
+
+    --mfd-container: 2.28rem;
+    /* 32px */
+  }
+}
+
+/* Mobile (Until 600px) */
+@media (max-width: 600px) {
+  :root {
+    /* MFD Variables */
+    /* Spacing */
+    --mfd-spacing-xxxs: max(0.3333333333333333rem, 4px);
+    /* 4px */
+    --mfd-spacing-xxs: max(0.6666666666666667rem, 4px);
+    /* 8px */
+    --mfd-spacing-s: max(1.333333333333333rem, 4px);
+    /* 16px */
+    --mfd-spacing-l: max(2.666666666666667rem, 4px);
+    /* 32px */
+    --mfd-spacing-xxxl: max(5.333333333333333rem, 4px);
+    /* 64px */
+
+    /* Radius */
+    --mfd-rounding-xs: 0.3333333333333333rem;
+    /* 4px */
+    --mfd-rounding-s: 0.6666666666666667rem;
+    /* 8px */
+    --mfd-rounding-m: 1rem;
+    /* 12px */
+    --mfd-rounding-l: 1.333333333333333rem;
+    /* 16px */
+
+    /* Container */
+    --mfd-container: 2rem;
+    /* 24px */
+  }
+}
+
+/* html:not([lang="en"]):not([lang="ar"]) {
+font-family: BasicAbuDhabi-Regular, Arial, sans-serif;;
+  } */
+
+html {
+  font-family: AbuDhabiBasis-Regular, Arial, sans-serif;
+  font-size: 1.041666667vw;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 1.111111111vw;
+  }
+}
+
+@media (max-width: 1280px) {
+  html {
+    font-size: 1.09375vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 1.3671875vw;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 1.822916667vw;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 3.2vw;
+  }
+}
+
+html:lang(ar) {
+  font-family: AbuDhabiBasis-Regular, Arial, sans-serif;
+}
+
+html:lang(he) {
+  font-family: Heebo-Regular, Arial, sans-serif;
+}
+
+html:lang(zh),
+html:lang(ru) {
+  font-family: NotoSansSc-Regular, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+section {
+  position: relative;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+/* added global svg dimension*/
+svg {
+  max-width: 96px;
+  max-height: 96px;
+}
+
+.disable-scroll {
+  overflow: hidden !important;
+  touch-action: none !important;
+  overscroll-behavior: none !important;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  100% {
+    left: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    bottom: -7rem;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: -3.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.018);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.018);
+  }
+}
+
+@keyframes soundPulse {
+  0% {
+    height: 4px;
+  }
+
+  25% {
+    height: 12px;
+  }
+
+  50% {
+    height: 6px;
+  }
+
+  75% {
+    height: 16px;
+  }
+
+  100% {
+    height: 4px;
+  }
+}
+
+@keyframes stopSoundPulse {
+
+  0%,
+  100% {
+    height: 4px;
+  }
+}
+
+/* @media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  html:not([lang="en"]):not([lang="ar"]) {
+    font-size: 80%;
+  }
+} */
+
+.react-datepicker__navigation {
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.react-datepicker__navigation-icon--previous::before {
+  display: none !important;
+}
+
+.react-datepicker__navigation-icon--next::before {
+  display: none !important;
+}
+
+.story-social-share-modal-wrapper {
+  z-index: 11111111111 !important;
+  background: none;
+}
+
+.year-holidays-modal {
+  z-index: 11111111111 !important;
+  background: none;
+}
+
+.story-social-share-modal-wrapper>div:first-of-type {
+  background-color: unset !important;
+}
+
+/* MFD Hero section timeline animation keyframe */
+@keyframes timelineAnim {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(175%);
+  }
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in 1.7s forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.018);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0.018);
+  }
+}
+
+@keyframes soundPulse {
+  0% {
+    height: 4px;
+  }
+
+  25% {
+    height: 12px;
+  }
+
+  50% {
+    height: 6px;
+  }
+
+  75% {
+    height: 16px;
+  }
+
+  100% {
+    height: 4px;
+  }
+}
+
+@keyframes stopSoundPulse {
+
+  0%,
+  100% {
+    height: 4px;
+  }
 }

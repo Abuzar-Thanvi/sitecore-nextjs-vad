@@ -54,7 +54,7 @@ const componentArg = process.argv[2];
 const args = process.argv.slice(3);
 
 if (!componentArg) {
-  throw 'Component name was not passed. Usage: jss scaffold <ComponentName>';
+  throw 'Component name was not passed. Usage: jss scaffold <ComponentName> [--type atom|molecule|organism|common]';
 }
 
 const regExResult = nameParamFormat.exec(componentArg);
