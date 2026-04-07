@@ -161,6 +161,9 @@ const ellipsis = (line: EllipsisLine = 2): EllipsisStyle => {
 };
 
 export const common = {
+    // MUI CommonColors base (required for palette compatibility)
+    black: '#000000',
+    white: '#ffffff',
     ellipsis,
     raisinBlack: RaisinBlack,
     mostlyBlack: MostlyBlack,
@@ -295,10 +298,10 @@ export const text = {
 
 export const action = {
     hover: mixins().Black(40),
-    hoverOpacity: '0.5',
+    hoverOpacity: 0.5,
     disabled: mixins().Black(200),
     disabledBackground: black3,
-    disabledOpacity: '0.3',
+    disabledOpacity: 0.3,
 };
 
 export const categoryTagaction = {

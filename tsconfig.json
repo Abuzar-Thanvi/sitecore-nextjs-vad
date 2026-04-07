@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
       "components/*": [
         "src/components/*"
@@ -26,7 +27,7 @@
         "src/lib/theme/*"
       ],
     },
-    "target": "esnext",
+    "target": "es5",
     "types": [
       "node",
       "react",
