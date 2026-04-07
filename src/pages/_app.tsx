@@ -15,6 +15,7 @@ import theme from 'lib/theme/theme';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'nprogress/nprogress.css';
 import 'assets/app.css';
+import StoreProvider from 'src/providers/StoreProvider';
 
 NProgress.configure({ showSpinner: false, trickleSpeed: 100 });
 
@@ -35,7 +36,9 @@ function App({ Component, pageProps }: AppProps<SitecorePageProps>): JSX.Element
         // If your app is not multilingual, next-localization and references to it can be removed.
       */}
       <I18nProvider lngDict={dictionary} locale={locale}>
-        <Component {...rest} />
+        <StoreProvider>
+          <Component {...rest} />
+        </StoreProvider>
       </I18nProvider>
     </ThemeProvider>
   );
