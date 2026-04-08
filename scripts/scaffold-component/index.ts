@@ -30,6 +30,7 @@ export interface ScaffoldComponentPluginConfig {
   [key: string]: unknown;
   componentName: string;
   componentPath: string;
+  componentFilename?: string;
   componentTemplateGenerator: (componentName: string) => string;
   args: string[];
   nextSteps: string[];

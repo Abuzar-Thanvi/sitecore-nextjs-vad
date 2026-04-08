@@ -40,10 +40,15 @@ class AtomicTypePlugin implements ScaffoldComponentPlugin {
       return config;
     }
 
+    // Pure React types (atom/molecule/organism) use index.tsx — imported directly, not via Sitecore component registry.
+    // Sitecore types (common) use ComponentName.tsx — JSS component builder discovers by filename stem, not folder name.
+    const isPureReact = PURE_REACT_TYPES.has(typeValue);
+
     return {
       ...config,
-      componentPath: `${ATOMIC_DIRS[typeValue]}/`,
-      ...(PURE_REACT_TYPES.has(typeValue) && {
+      componentPath: `${ATOMIC_DIRS[typeValue]}/${config.componentName}/`,
+      componentFilename: isPureReact ? 'index.tsx' : `${config.componentName}.tsx`,
+      ...(isPureReact && {
         componentTemplateGenerator: generateAtomicComponentSrc,
       }),
     };

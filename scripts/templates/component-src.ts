@@ -14,12 +14,13 @@ type ${componentName}Props = ComponentProps & {
   };
 };
 
-const ${componentName} = (props: ${componentName}Props): JSX.Element => (
-  <div>
-    <p>${componentName} Component</p>
-    <Text field={props.fields.heading} />
-  </div>
-);
+const ${componentName} = (_: ${componentName}Props): JSX.Element => {
+  return (
+    <div>
+      <p>${componentName} Component</p>
+    </div>
+  )
+};
 
 export default withDatasourceCheck()<${componentName}Props>(${componentName});
 `;

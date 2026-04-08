@@ -9,8 +9,8 @@ class ComponentPlugin implements ScaffoldComponentPlugin {
   order = 99;
 
   exec(config: ScaffoldComponentPluginConfig) {
-    const { componentName, componentPath } = config;
-    const filename = `${componentName}.tsx`;
+    const { componentName, componentPath, componentFilename } = config;
+    const filename = componentFilename ?? `${componentName}.tsx`;
     const componentRoot = componentPath.startsWith('src/') ? '' : 'src/components';
     const outputFilePath = path.join(componentRoot, componentPath, filename);
     const template = config.componentTemplateGenerator(componentName);
